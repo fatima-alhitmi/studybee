@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf0;
+  color: #2b2118;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: #ffd43b;
+  border-bottom: 3px solid #2b2118;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header nav a {
+  color: #2b2118;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 600px;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background:
+    radial-gradient(circle at 90% 20%, #ffe98a 0 90px, transparent 91px),
+    radial-gradient(circle at 10% 80%, #fff0a8 0 120px, transparent 121px),
+    #fffaf0;
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.welcome {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 8px 15px;
+  background: #2b2118;
+  color: #ffd43b;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 58px;
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: #e09b00;
+}
+
+.hero-description {
+  max-width: 560px;
+  margin: 25px 0;
+  color: #6b5a4a;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+button {
+  border: 3px solid #2b2118;
+  border-radius: 12px;
+  padding: 15px 25px;
+  background: #ffd43b;
+  color: #2b2118;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #2b2118;
+}
+
+button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #2b2118;
+}
+
+/* =========================
+   BEE CARD
+========================= */
+
+.bee-card {
+  width: 300px;
+  min-width: 300px;
+  padding: 40px 25px;
+  text-align: center;
+  background: #ffffff;
+  border: 3px solid #2b2118;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0 #ffd43b;
+}
+
+.bee {
+  display: block;
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.bee-card h2 {
+  margin: 0 0 10px;
+  font-size: 25px;
+}
+
+.bee-card p {
+  margin: 0;
+  color: #6b5a4a;
+}
+
+/* =========================
+   SUBJECTS
+========================= */
+
+.section {
+  padding: 80px 7%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.section h2 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.section-description {
+  margin-bottom: 40px;
+  color: #6b5a4a;
+}
+
+.subject-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.subject-card {
+  padding: 30px;
+  background: #fff8d8;
+  border: 3px solid #2b2118;
+  border-radius: 18px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+}
+
+.subject-card span {
+  font-size: 40px;
+}
+
+.subject-card h3 {
+  margin: 15px 0 8px;
+  font-size: 21px;
+}
+
+.subject-card p {
+  margin: 0;
+  color: #6b5a4a;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-section {
+  padding: 70px 7%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  background: #2b2118;
+  color: white;
+}
+
+.progress-section h2 {
+  margin: 5px 0 15px;
+  font-size: 32px;
+  color: #ffd43b;
+}
+
+.progress-section p {
+  color: #e8ddd2;
+  line-height: 1.6;
+}
+
+.small-title {
+  color: #ffd43b !important;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.progress-card {
+  padding: 30px 20px;
+  text-align: center;
+  background: #ffd43b;
+  color: #2b2118;
+  border-radius: 18px;
+  border: 3px solid white;
+}
+
+.progress-card span {
+  display: block;
+  font-size: 35px;
+}
+
+.progress-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.progress-card p {
+  margin: 5px 0 0;
+  color: #2b2118;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #1d1712;
+  color: #fff0a8;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bee-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
