@@ -1,5 +1,7 @@
+
 import { useState } from "react";
 import "./App.css";
+import Dashboard from "./Dashboard";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -51,6 +53,7 @@ function App() {
 
         <nav>
           <a href="#home">Home</a>
+          <a href="#dashboard">Dashboard</a>
           <a href="#subjects">Subjects</a>
           <a href="#study-buddy">AI Buddy</a>
           <a href="#progress">Progress</a>
@@ -58,6 +61,7 @@ function App() {
       </header>
 
       <main>
+        {/* HERO */}
         <section id="home" className="hero">
           <div className="hero-text">
             <p className="welcome">WELCOME TO STUDYBEE 🐝</p>
@@ -78,11 +82,17 @@ function App() {
 
           <div className="bee-card">
             <div className="bee">🐝</div>
+
             <h2>Let's get learning!</h2>
+
             <p>Your study journey starts here.</p>
           </div>
         </section>
 
+        {/* DAY 7 DASHBOARD */}
+        <Dashboard />
+
+        {/* SUBJECTS */}
         <section id="subjects" className="section">
           <h2>Your Subjects</h2>
 
@@ -93,24 +103,31 @@ function App() {
           <div className="subject-grid">
             <div className="subject-card">
               <span>📐</span>
+
               <h3>Mathematics</h3>
+
               <p>70% performance</p>
             </div>
 
             <div className="subject-card">
               <span>🧪</span>
+
               <h3>Chemistry</h3>
+
               <p>43.5% performance</p>
             </div>
 
             <div className="subject-card">
               <span>📚</span>
+
               <h3>English</h3>
+
               <p>Start learning</p>
             </div>
           </div>
         </section>
 
+        {/* AI STUDY BUDDY */}
         <section id="study-buddy" className="study-buddy-section">
           <div className="study-buddy-container">
             <div className="study-buddy-intro">
@@ -185,6 +202,7 @@ function App() {
           </div>
         </section>
 
+        {/* PROGRESS */}
         <section id="progress" className="progress-section">
           <div>
             <p className="small-title">YOUR JOURNEY</p>
@@ -199,13 +217,17 @@ function App() {
 
           <div className="progress-card">
             <span>🐝</span>
+
             <strong>0</strong>
+
             <p>Study sessions</p>
           </div>
 
           <div className="progress-card">
             <span>🎯</span>
+
             <strong>43.5%</strong>
+
             <p>Current weakest subject</p>
           </div>
         </section>
@@ -219,3 +241,4 @@ function App() {
 }
 
 export default App;
+
